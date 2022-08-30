@@ -1,0 +1,84 @@
+\documentclass[11pt]{lectures}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[margin=3cm]{empheq}
+\usepackage{framed}
+%Use a nice font
+\usepackage{concmath}
+\usepackage[OT1]{fontenc}
+
+%Shading colors for definitions, equations, and examples
+\colorlet{defn}{cyan}
+\colorlet{eqn}{orange}
+\colorlet{exam}{green}
+
+%theorems
+\usepackage{thmtools}
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfsetup{skipabove=1em,skipbelow=0em}
+\declaretheoremstyle[
+numbered = no, mdframed={
+linewidth=2pt,rightline=false,topline=false,linecolor=defn, backgroundcolor=defn!15
+}
+]{thmdef}
+
+\declaretheoremstyle[
+numbered = no, mdframed={
+linewidth=2pt,rightline=false,topline=false,linecolor=eqn, backgroundcolor=eqn!15
+}
+]{thmeqn}
+
+\declaretheoremstyle[
+numbered = no, mdframed={
+linewidth=2pt,rightline=false,topline=false,linecolor=exam, backgroundcolor=exam!15
+}
+]{thmexm}
+
+\declaretheorem[style = thmdef, name = Definition]{Definition}
+\declaretheorem[style = thmeqn, name = Equation]{Equation}
+\declaretheorem[style = thmexm, name = Example]{Example}
+
+%Lectures class adds a leading 0 to section and so on, so get rid of that
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\begin{document}
+
+\title{STA 301 Lecture Notes}
+\begin{center}
+{\LARGE \bf STA 301 Lecture Notes}\\
+{\large Statistics}\\
+Fall 2022
+\end{center}
+\begin{multicols}{2}
+\section*{Color Key}
+\begin{tabular}{|c|}
+    \hline
+     \colorbox{defn}{\textbf{Definition}}\\
+     \hline
+     \colorbox{eqn}{\textbf{Equation}}\\
+     \hline
+     \colorbox{exam}{\textbf{Example}}\\
+     \hline
+\end{tabular}
+
+\section*{Important Dates}
+\begin{tabular}{|c|c|}
+    \hline
+    \textbf{Assignment} & \textbf{Date} \\
+    \hline
+    \hline
+     & 
+\end{tabular}
+\end{multicols}
+\setcounter{section}{0}
+
+\section{The First One}
+\end{document}
